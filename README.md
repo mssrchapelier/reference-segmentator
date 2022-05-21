@@ -1,10 +1,10 @@
 # reference-segmentator
 
-*This Java program was developed as part of coursework carried out at [the Department of Theoretical and Applied Linguistics](tipl.philol.msu.ru), Faculty of Philology, Moscow State University, Russia.*
+*This Java program was developed as part of coursework carried out at [the Department of Theoretical and Applied Linguistics](https://tipl.philol.msu.ru), Faculty of Philology, Moscow State University, Russia.*
 
 ## What this does
 
-This is a prototype Java program that allows you to parse a list of references (contained in a text file) into their components (authors, book/article title, publisher, etc.) written as a `.json` file.
+This is a prototype Java program that allows you to **parse a list of references *(contained in a text file)* into their components *(authors, book/article title, publisher, etc.)*** written as a `.json` file.
 
 As an example, this reference:
 
@@ -25,19 +25,19 @@ will be converted to this JSON object:
   },
 ```
 
-See the `examples` folder for more examples.
+See the [`examples`](examples/) folder for more examples.
 
 ## Usage
 
-1. Download `reference-segmentator.zip` from the `dist` folder.
+1. Download [`reference-segmentator.zip`](dist/reference-segmentator.zip) from the `dist` folder.
 
 2. Run `reference-segmentator.jar` on your input file with references:
 
 ```
-java -jar reference-segmentator.jar **input.txt**
+java -jar reference-segmentator.jar your-input-file.txt
 ```
 
-If the path to the input file has not been specified, examples from input-sample.txt will be processed.
+If the path to the input file has not been specified, examples from `input-sample.txt` will be processed.
 
 You can also specify the path for the output `.json` file (default: `output.json`) with `-o output_path` or `--output output_path`.
 
