@@ -1,0 +1,32 @@
+authors = "[\p{Lu}][\p{Ll}]*([–—‒\-][\p{L}]+)* [\p{Lu}][\p{Ll}]?\.([ –—‒\-]?[\p{Lu}][\p{Ll}]?\.)*(, [\p{Lu}][\p{Ll}]*([–—‒\-][\p{L}]+)* [\p{Lu}][\p{Ll}]?\.([ –—‒\-]?[\p{Lu}][\p{Ll}]?\.)*)*( \((отв\. ?)?ред\.\))?"
+book-title = ".+?"
+city = "([\p{Lu}][\p{L} –—‒\-]*\.?)(, [\p{Lu}][\p{L} –—‒\-]*\.?)*"
+publishers = "(([\p{Lu}][\p{L} –—‒\-\.]*)(, [\p{Lu}][\p{L} –—‒\-\.]*)*)?"
+year = "\d{4}"
+volume = "(Т(ом)?\.? (([IVX]+)|(\d+))?)?"
+space = " ?"
+semicolon = "\:"
+comma = ","
+period = "\.?"
+slash = "//?"
+pagination = "(С\. \d+([–—‒\-]\d+)?(, \d+([–—‒\-]\d+)?)*){0,1}"
+article-title = ".+?"
+collection-title = ".+?"
+collection-editors = "([\p{Lu}][\p{Ll}]*([–—‒\-][\p{L}]+)* [\p{Lu}][\p{Ll}]?\.([ –—‒\-]?[\p{Lu}][\p{Ll}]?\.)*(, [\p{Lu}][\p{Ll}]*([–—‒\-][\p{L}]+)* [\p{Lu}][\p{Ll}]?\.([ –—‒\-]?[\p{Lu}][\p{Ll}]?\.)*)* \((отв\. ?)?ред\.\))?"
+issue = "(((Вып\.)|(No\.?)|№) ?\d+)?"
+FIELDS
+authors
+book-title
+city
+publishers
+year
+volume
+pagination
+article-title
+collection-title
+collection-editors
+issue
+ENTRIES
+article-in-journal = authors period space article-title period space slash space collection-editors period space collection-title period space year period space volume period space issue period space pagination period
+article-in-book = authors period space article-title period space slash space collection-editors period space collection-title period space city semicolon space publishers comma space year period space pagination period
+book = authors period space book-title period space volume period space city semicolon space publishers comma space year period space pagination period
