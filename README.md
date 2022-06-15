@@ -22,7 +22,7 @@ will be converted to this JSON object:
     "publishers": "Алетейя",
     "article-title": "О некоторых особенностях склонения в адыгских языках",
     "authors": "Аркадьев П. М."
-  },
+  }
 ```
 
 See the [`examples`](examples/) folder for more examples.
