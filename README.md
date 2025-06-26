@@ -1,6 +1,6 @@
 # reference-segmentator
 
-*This Java program was developed as part of coursework carried out at the [Department of Theoretical and Applied Linguistics](https://tipl.philol.msu.ru), Faculty of Philology, Moscow State University, Russia.*
+*This Java program was developed as part of a year-long term paper (bachelor's degree, third year) at the [Department of Theoretical and Applied Linguistics](https://tipl.philol.msu.ru), Faculty of Philology, Moscow State University, Russia.*
 
 ## What this does
 
