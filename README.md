@@ -4,13 +4,13 @@
 
 ## What this does
 
-This is a prototype Java program that allows you to **parse a list of references *(contained in a text file)* into their components *(authors, book/article title, publisher, etc.)*** written as a `.json` file.
+This is a prototype Java program that allows the user to **parse a list of references *(contained in a text file)* into their components *(authors, book/article title, publisher, etc.)*** written as a `.json` file.
 
 As an example, this reference:
 
 > Аркадьев П. М. О некоторых особенностях склонения в адыгских языках // Плунгян В. А. (отв. ред.). Язык. Константы. Переменные: Памяти Александра Евгеньевича Кибрика. СПб.: Алетейя, 2014. С. 552—563.
 
-will be converted to this JSON object:
+will be converted to the following JSON object:
 
 ```
   {
@@ -31,7 +31,7 @@ See the [`examples`](examples/) folder for more examples.
 
 1. Download [`reference-segmentator.zip`](dist/reference-segmentator.zip) from the `dist` folder.
 
-2. Run `reference-segmentator.jar` on your input file with references:
+2. Run `reference-segmentator.jar` on an input file containing references:
 
 ```
 java -jar reference-segmentator.jar your-input-file.txt
@@ -55,4 +55,4 @@ Arguments:
 
 ## Configuration file
 
-The program uses a configuration file (default location: `res/config.txt`) specifying the citation formats that can be processed. More information about changing the configuration can be found in [the full text of the coursework](docs/segmentator-full-text.pdf) and [the accompanying handout](docs/segmentator-handout.pdf) (both in Russian).
+The program uses a configuration file (default location: `res/config.txt`) specifying the citation formats that can be processed. More information about changing the configuration can be found in [the full text of the coursework](docs/segmentator-full-text.pdf) and [the accompanying handout](docs/segmentator-handout.pdf) (both are in Russian).
